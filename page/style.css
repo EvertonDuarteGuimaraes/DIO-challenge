@@ -1,20 +1,38 @@
 body {
-    background: #ccc;
+    background: #f7f7f7;
+}
+
+.photo {
+    border: 1px solid #505050;
+    border-radius: 50%;
 }
 
 #title,
-.subTitle,
-.postTitle {
-    color: blue;
+.sub_title,
+.post_title {
+    color: #505050;
 }
 
-.postTitle {
+.post_title {
     font-size: 1rem;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 0.9375rem;
 }
 
 .post {
     background: #fff;
-    padding: 0.625rem;
-    border: 1px solid #000;
-    margin: 0.5rem;
+    padding: 0.9375rem;
+    border: 1px solid #505050;
+    margin-bottom: 0.9375rem;
+    border-radius: 0.475rem;
+}
+
+.post_content {
+    margin: 0;
+    margin-bottom: 0.9375rem;
+}
+
+.post_image {
+    margin-bottom: 0.9375rem;
 }
