@@ -1,0 +1,20 @@
+body {
+    background: #ccc;
+}
+
+#title,
+.subTitle,
+.postTitle {
+    color: blue;
+}
+
+.postTitle {
+    font-size: 1rem;
+}
+
+.post {
+    background: #fff;
+    padding: 0.625rem;
+    border: 1px solid #000;
+    margin: 0.5rem;
+}

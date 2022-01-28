@@ -5,25 +5,27 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My Website</title>
+
+        <link rel="stylesheet" href="style.css" />
     </head>
-    <header id="pageTitle">
+    <header>
         <!--this element can be a primary header for you page or parts of that same-->
         <img
             src="https://images.unsplash.com/photo-1565843708714-52ecf69ab81f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8aHRtbCUyMGNvZGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
             alt="Cup of cofe and nootebook showing HTML code"
         />
-        <h1>Page title</h1>
+        <h1 id="title">Page title</h1>
     </header>
     <section>
         <!--section element can be filled by any generic content-->
         <header>
-            <h2>Posts</h2>
+            <h2 class="subTitle">Posts</h2>
         </header>
-        <article>
+        <article class="post">
             <!--an article element represents a relevant content for you page-->
             <!--meanwile aside element represents a related content of main theme-->
             <header>
-                <h3>Post#1</h3>
+                <h3 class="postTitle">Post#1</h3>
             </header>
             <p>
                 <!--Lorem is a generic text just to fill the content with an value for experimentation-->
@@ -35,9 +37,21 @@
     </section>
     <footer id="contatcInformation">
         <!--this element can be a primary footer for you page or parts of that same-->
-        <p>
-            <a href="https://www.linkedin.com/in/everton-duarte-910a65157/" target="blanck">Find my LinkedIn here</a>
-        </p>
+        <ul>
+            <li id="links">
+                <a href="https://www.linkedin.com/in/everton-duarte-910a65157/" target="_blanck" id="linkedIN"
+                    >LinkedIn</a
+                >
+            </li>
+            <li id="email">
+                <a href="mailto:everton.duarte@academico.ifpb.edu.br" target="_blanck"
+                    >everton.duarte@academico.ifpb.edu.br</a
+                >
+            </li>
+            <li id="gitHub">
+                <a href="https://github.com/EvertonDuarteGuimaraes" target="_blanck">GitHub</a>
+            </li>
+        </ul>
     </footer>
     <body></body>
 </html>
