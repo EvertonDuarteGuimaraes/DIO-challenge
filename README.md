@@ -1,13 +1,15 @@
-# DIO-challenge
+# Login web page
 
-Challenge for make a first public repository.
+Project to make a page based on Instagram first page.
 
 ## Useful Links
 
-[Basic Syntax|Markdown](https://www.markdownguide.org/basic-syntax/)
+1. [Basic Syntax|Markdown](https://www.markdownguide.org/basic-syntax/)
 
-[Otimize images](https://tinypng.com/)
+2. [Otimize images](https://tinypng.com/)
 
-[HTML, CSS and JS tips](https://developer.mozilla.org/en-US/)
+3. [HTML, CSS and JS tips](https://developer.mozilla.org/en-US/)
 
-## Here i'll make a WebSite for basic HTML Bootcamp
+## For basic HTML/CSS Bootcamp
+
+I'll make an login page to a social network about RPGs players and DM's who are loking for grups to join them.
