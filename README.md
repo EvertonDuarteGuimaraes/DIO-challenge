@@ -10,6 +10,8 @@ Project to make a page based on Instagram first page.
 
 3. [HTML, CSS and JS tips](https://developer.mozilla.org/en-US/)
 
+4. [colour palette](https://paletadecores.com/)
+
 ## For basic HTML/CSS Bootcamp
 
 I'll make an login page to a social network about RPGs players and DM's who are loking for grups to join them.
