@@ -10,7 +10,7 @@ Project to make a page based on Instagram first page.
 
 3. [HTML, CSS and JS tips](https://developer.mozilla.org/en-US/)
 
-4. [colour palette](https://paletadecores.com/)
+4. [Colour palette](https://paletadecores.com/)
 
 ## For basic HTML/CSS Bootcamp
 
