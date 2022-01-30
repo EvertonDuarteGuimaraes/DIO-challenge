@@ -1,7 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Klee one', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
 :root {
+    /*colour pallet*/
     --base-color: #e1edd1;
     --body-color: #aab69b;
     --text-color: #9e906e;
     --item-color: #b47941;
     --buttom-color: #cf391d;
+}
+
+h1 {
+    font: 400 1.875rem 'Lobster', sans-serif;
 }

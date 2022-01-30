@@ -14,4 +14,4 @@ Project to make a page based on Instagram first page.
 
 ## For basic HTML/CSS Bootcamp
 
-I'll make an login page to a social network about RPGs players and DM's who are loking for grups to join them.
+I'll make an login page to a social network for anyone who are looking for public content about cinema, tv shows or something like that, were they can follow, publish like or discust about it.
