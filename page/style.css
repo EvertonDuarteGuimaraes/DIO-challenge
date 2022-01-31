@@ -2,32 +2,53 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Klee one', sans-serif;
+    font-family: sans-serif;
+    text-decoration: none;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.875rem;
 }
 
 :root {
     /*colour palette*/
+    /*option 1*/
+    /*
     --base-color: #e1edd1;
     --body-color: #aab69b;
     --text-color: #9e906e;
     --title-color: #b47941;
     --buttom-color: #cf391d;
+    */
+
+    /*option 2*/
+    /*
+    --base-color: #f9ebc4;
+    --body-color: #ffb391;
+    --text-color: #fc2f68;
+    --title-color: #472f5f;
+    --buttom-color: #08295e;
+    */
+    /*option 3*/
+
+    --base-color: #02031a;
+    --body-color: #021b2b;
+    --text-color: #b10c43;
+    --title-color: #ff0841;
+    --buttom-color: #ebdfcc;
+    /*
+
+    */
 }
 
 body {
+    display: flex;
+    justify-content: center;
     background-color: var(--base-color);
     color: var(--text-color);
 }
 
 body h1 {
-    font: 400 1.875rem 'Lobster', sans-serif;
+    font: 400 1.875rem 'DM sans', sans-serif;
     color: var(--title-color);
-}
-
-label {
-    display: block;
 }
 
 input {
@@ -35,15 +56,27 @@ input {
     border-radius: 0.5rem;
 }
 
-input[type='submit'],
-label {
-    margin-top: 1rem;
-    font: 400 1rem 'Poppins', sans-serif;
-}
-
 #sign_in_buttom {
-    width: 19rem;
+    width: 50%;
+    margin: 4rem 4rem;
     height: 2rem;
     background-color: var(--buttom-color);
     color: var(--base-color);
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+}
+
+.group {
+    margin: 1rem;
+}
+
+.wrapper .group h1,
+img {
+    margin-left: 2rem;
 }
