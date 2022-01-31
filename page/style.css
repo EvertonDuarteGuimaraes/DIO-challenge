@@ -12,10 +12,38 @@
     --base-color: #e1edd1;
     --body-color: #aab69b;
     --text-color: #9e906e;
-    --item-color: #b47941;
+    --title-color: #b47941;
     --buttom-color: #cf391d;
 }
 
-h1 {
+body {
+    background-color: var(--base-color);
+    color: var(--text-color);
+}
+
+body h1 {
     font: 400 1.875rem 'Lobster', sans-serif;
+    color: var(--title-color);
+}
+
+label {
+    display: block;
+}
+
+input {
+    border-style: inset;
+    border-radius: 0.5rem;
+}
+
+input[type='submit'],
+label {
+    margin-top: 1rem;
+    font: 400 1rem 'Poppins', sans-serif;
+}
+
+#sign_in_buttom {
+    width: 19rem;
+    height: 2rem;
+    background-color: var(--buttom-color);
+    color: var(--base-color);
 }
