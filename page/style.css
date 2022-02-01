@@ -5,18 +5,19 @@
     font-family: sans-serif;
     text-decoration: none;
     font-weight: 400;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
 }
 
 :root {
     /*colour palette*/
     /*option 1*/
-    /*
     --base-color: #e1edd1;
     --body-color: #aab69b;
     --text-color: #9e906e;
     --title-color: #b47941;
     --buttom-color: #cf391d;
+    /*
+
     */
 
     /*option 2*/
@@ -29,54 +30,90 @@
     */
     /*option 3*/
 
+    /*
     --base-color: #02031a;
     --body-color: #021b2b;
     --text-color: #b10c43;
     --title-color: #ff0841;
     --buttom-color: #ebdfcc;
-    /*
-
     */
 }
 
 body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--base-color);
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
-    background-color: var(--base-color);
-    color: var(--text-color);
 }
 
-body h1 {
-    font: 400 1.875rem 'DM sans', sans-serif;
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--title-color);
-}
-
-input {
-    border-style: inset;
-    border-radius: 0.5rem;
-}
-
-#sign_in_buttom {
-    width: 50%;
-    margin: 4rem 4rem;
-    height: 2rem;
-    background-color: var(--buttom-color);
-    color: var(--base-color);
 }
 
 .wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 50%;
+    justify-content: start;
+    width: 60%;
     height: 100vh;
 }
 
-.group {
-    margin: 1rem;
+.bigIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
 }
 
-.wrapper .group h1,
-img {
-    margin-left: 2rem;
+.bigIcon img {
+    height: 30rem;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 16rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--body-color);
+    width: 100%;
+    padding: 1.2rem 0;
+    border: 1px solid var(--text-color);
+    box-shadow: 0 0.3rem 0.3rem 0 var(--title-color);
+    border-radius: 0.5rem;
+}
+
+.group:nth-child(1) {
+    min-height: 6rem;
+}
+
+.littleIcon {
+    height: 2.1rem;
+}
+
+#ltMasks {
+    max-height: 1.875rem;
+    border-radius: 50%;
+    overflow: hidden;
+    color: var(--body-color);
+}
+
+.password input[type='password'],
+.webkit input[type='password'] {
+    font: large Verdana, sans-serif;
+    letter-spacing: 1px;
 }
