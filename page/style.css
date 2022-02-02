@@ -19,7 +19,6 @@
     /*border-radius*/
     --radius: 0.4rem;
 }
-
 /*==================================================main==========================================*/
 body {
     width: 100%;
@@ -49,7 +48,7 @@ h1 {
     height: 100vh;
 }
 
-.logos {
+.login {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -65,6 +64,7 @@ h1 {
     flex-direction: column;
     background-color: var(--body-color);
     width: 100%;
+    margin-bottom: 2rem;
     padding: 0.8rem 0;
     border: 1px solid var(--text-color);
     box-shadow: 0 0.3rem 0.3rem 0 var(--title-color);
@@ -78,12 +78,12 @@ h1 {
 .little_icon {
     height: 2.1rem;
 }
-
 /*=======================================email and password aparence and efects========================*/
 .form {
     display: flex;
     position: relative;
-    justify-content: space-between;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
     width: 20rem;
     height: 3rem;
 }
@@ -150,4 +150,65 @@ h1 {
 
 .big_icon img {
     height: 36rem;
+}
+/*===================================buttons and links============================================*/
+.button {
+    background-color: var(--buttom-color);
+    color: var(--base-color);
+    padding: 0.5rem;
+    border-radius: var(--radius);
+}
+
+.link {
+    color: #0095f6;
+}
+/*=====================================Get the app============================================*/
+.get_the_app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.app_download {
+    height: 4rem;
+    width: 4rem;
+    background-size: cover;
+}
+
+.app_download:nth-child(1) {
+    background-image: url(./img/apple.svg);
+}
+
+.app_download:nth-child(2) {
+    background-image: url(./img/google.svg);
+}
+/*=====================================Media queries============================================*/
+@media (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .big_icon {
+        display: none;
+    }
+
+    .login {
+        width: 100%;
+    }
 }
