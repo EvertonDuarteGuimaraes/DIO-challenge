@@ -10,30 +10,33 @@
         <link rel="stylesheet" href="style.css" />
 
         <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <div class="wrapper">
-            <div class="bigIcon">
+            <div class="big_icon">
                 <img src="./img/camera.png" alt="bigIcon" />
             </div>
             <div class="logos">
                 <div class="group">
                     <h1>Cinemaicon</h1>
-                    <div class="littleIcon">
-                        <img id="ltMasks" src="./img/masks.png" alt="little Icon" />
+                    <div class="little_icon">
+                        <img class="little_masks" src="./img/masks.png" alt="little Icon" />
                     </div>
-                    <div class="userName">
-                        <input type="text" />
-                    </div>
-                    <div class="passsword">
-                        <input type="text" />
+                    <div class="form">
+                        <input type="text" class="form_input" autocomplete="off" id="email" />
+                        <label for="email" class="form_label">Email</label>
                     </div>
                     <a href="#" class="signIn">Sign In</a>
                 </div>
                 <div class="group">
                     <a href="#" class="signUp">Sign Up</a>
                 </div>
-                <div class="getApp">
+                <div class="get_app">
                     <p class="sotry">Download here</p>
                     <div class="download">
                         <a href="" class="appDownload"></a>
