@@ -83,6 +83,7 @@ h1 {
 .form {
     display: flex;
     position: relative;
+    justify-content: space-between;
     width: 20rem;
     height: 3rem;
 }
@@ -111,6 +112,10 @@ h1 {
     border-color: var(--title-color);
 }
 
+.form_input:placeholder-shown {
+    text-overflow: ellipsis;
+}
+
 .form label {
     position: absolute;
     left: 1rem;
@@ -123,12 +128,11 @@ h1 {
 }
 
 .form_input:focus ~ .form_label,
-.form_input:not(:placeholder-shown) .form_input:not(:focus) ~ .form_label {
+.form_input:not(:placeholder-shown).form_input:not(:focus) ~ .form_label {
     top: -0.5rem;
     font-size: 0.8rem;
     left: 0.8rem;
 }
-
 /*===================================icons and imagens to be treated=====================================*/
 .little_masks {
     max-height: 1.875rem;
