@@ -53,7 +53,7 @@ h1 {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     min-height: 16rem;
 }
 
@@ -220,5 +220,11 @@ h1 {
 
     .big_icon {
         display: none;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .login {
+        max-width: 25rem;
     }
 }
