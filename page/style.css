@@ -3,26 +3,28 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font: 400 0.9rem sans-serif;
     text-decoration: none;
-    font-weight: 400;
-    font-size: 0.9rem;
 }
 
 :root {
     /*colour palette*/
-    /*Matiz 213,100,50*/
-    --primary_base-color: hsl(213 11% 91%);
-    --primary_light-color: hsl(213, 13%, 87%);
-    --primary_dark-color: hsl(213, 17%, 81%);
-    --primary_shadow-color: hsl(213, 49%, 19%);
-    --primary_border-color: hsl(213, 30%, 78%);
-    /*Matiz 13,100,50*/
-    --second_base-color: hsl(13, 79%, 55%);
-    --second_light-color: hsl(13, 85%, 58%);
-    --second_dark-color: hsl(13, 90%, 31%);
-    --second_border-color: hsl(13, 17%, 49%);
-    --second_shadow-color: hsl(13, 49%, 19%);
+
+    --primary_matiz: 213;
+
+    --primary_base-color: hsl(var(--primary_matiz) 11% 91%);
+    --primary_light-color: hsl(var(--primary_matiz) 13% 87%);
+    --primary_dark-color: hsl(var(--primary_matiz) 17% 81%);
+    --primary_shadow-color: hsl(var(--primary_matiz) 49% 19%);
+    --primary_border-color: hsl(var(--primary_matiz) 30% 78%);
+
+    --second_matiz: 13;
+
+    --second_base-color: hsl(var(--second_matiz) 79% 55%);
+    --second_light-color: hsl(var(--second_matiz) 85% 58%);
+    --second_dark-color: hsl(var(--second_matiz) 90% 31%);
+    --second_border-color: hsl(var(--second_matiz) 30% 78%);
+    --second_shadow-color: hsl(var(--second_matiz) 49% 19%);
     /*border-radius*/
     --radius: 0.4rem;
 }
@@ -35,8 +37,7 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    font-family: 'Convergence', sans-serif;
-    font-size: 1.2rem;
+    font: 600 1.1rem 'Klee One', sans-serif;
 }
 
 h1 {
@@ -44,7 +45,7 @@ h1 {
     justify-content: center;
     align-items: center;
     color: var(--second_base-color);
-    font: 'Lato';
+    font: 600 1.8rem 'Klee One', sans-serif;
 }
 
 .wrapper {
@@ -60,7 +61,7 @@ h1 {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     min-height: 16rem;
 }
 
@@ -74,7 +75,7 @@ h1 {
     margin-bottom: 2rem;
     padding: 0.8rem 0;
     border: 1px solid var(--primary_border-color);
-    box-shadow: 0 0.3rem 0.3rem 0 var(--primary_shadow-color);
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem var(--primary_shadow-color);
     border-radius: var(--radius);
 }
 
@@ -83,7 +84,7 @@ h1 {
 }
 
 .little_icon {
-    height: 2.1rem;
+    height: 2rem;
 }
 /*=======================================email and password aparence and efects========================*/
 .form {
@@ -164,18 +165,26 @@ h1 {
 .button {
     background-color: var(--second_dark-color);
     color: #fff;
-    padding: 0.5rem;
-    border: 2px inset var(--second_border-color);
+    padding: 0.5rem 1.6rem;
+    border: 1px inset var(--second_border-color);
     border-radius: var(--radius);
-    box-shadow: 0 0.3rem 0.3rem 0 var(--second_shadow-color);
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem var(--second_shadow-color);
+    font-size: 1rem;
 }
 
 .button:hover {
-    background-color: var(--second_light-color);
+    background-color: var(--second_base-color);
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem var(--second_shadow-color);
 }
 
 .link {
     color: #0a5080;
+    font-size: 1rem;
+    margin: 0.2rem 0;
+}
+
+.link:hover {
+    color: #1d71a8;
 }
 /*=====================================Get the app============================================*/
 .get_the_app {
@@ -215,12 +224,17 @@ h1 {
         margin-bottom: 0.375rem;
     }
 
+    .big_icon {
+        display: none;
+    }
+
     .login {
-        width: 90%;
+        width: 22rem;
+        min-width: 22rem;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
     .form input {
         float: center;
         margin-top: 0.375rem;
@@ -228,7 +242,7 @@ h1 {
     }
 
     .login {
-        width: 100%;
+        min-width: 100%;
     }
 
     .big_icon {
@@ -236,8 +250,9 @@ h1 {
     }
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1380px) {
     .login {
-        max-width: 25rem;
+        width: 22rem;
+        max-width: 22rem;
     }
 }
