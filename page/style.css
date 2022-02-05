@@ -18,11 +18,11 @@
     --primary_shadow-color: hsl(var(--primary_matiz) 49% 19%);
     --primary_border-color: hsl(var(--primary_matiz) 30% 78%);
 
-    --second_matiz: 13;
+    --second_matiz: 3;
 
-    --second_base-color: hsl(var(--second_matiz) 79% 55%);
+    --second_base-color: hsl(var(--second_matiz) 76% 55%);
     --second_light-color: hsl(var(--second_matiz) 85% 58%);
-    --second_dark-color: hsl(var(--second_matiz) 90% 31%);
+    --second_dark-color: hsl(var(--second_matiz) 76% 39%);
     --second_border-color: hsl(var(--second_matiz) 30% 78%);
     --second_shadow-color: hsl(var(--second_matiz) 49% 19%);
     /*border-radius*/
@@ -38,14 +38,6 @@ body {
     display: flex;
     justify-content: center;
     font: 600 1.1rem 'Klee One', sans-serif;
-}
-
-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--second_base-color);
-    font: 600 1.8rem 'Klee One', sans-serif;
 }
 
 .wrapper {
@@ -81,10 +73,6 @@ h1 {
 
 .group:nth-child(1) {
     min-height: 9rem;
-}
-
-.little_icon {
-    height: 2rem;
 }
 /*=======================================email and password aparence and efects========================*/
 .form {
@@ -144,11 +132,23 @@ h1 {
     left: 0.8rem;
 }
 /*===================================icons and imagens to be treated=====================================*/
-.little_masks {
-    max-height: 1.875rem;
-    border-radius: 50%;
-    overflow: hidden;
-    color: var(--second_dark-color);
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--second_base-color);
+    font: 600 3rem 'Klee One', sans-serif;
+    padding: 0.5rem 0;
+}
+
+.little_icon {
+    margin: 0;
+    padding: 0;
+    height: 3rem;
+    width: 3rem;
+    rotate: 22deg;
+    background-color: var(--second_dark-color);
+    border-radius: var(--radius);
 }
 
 .big_icon {
@@ -159,7 +159,10 @@ h1 {
 }
 
 .big_icon img {
-    height: 36rem;
+    margin: 0;
+    padding: 0;
+    position: flex;
+    height: 30rem;
 }
 /*===================================buttons and links============================================*/
 .button {
